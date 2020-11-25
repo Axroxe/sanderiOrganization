@@ -1,0 +1,34 @@
+ion-header {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  height: 80px;
+  padding: 0 60px;
+  .menu {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    cursor: pointer;
+    a {
+      text-decoration: none;
+      color: black;
+      border-bottom: 2px solid transparent;
+      &:hover {
+        color: cornflowerblue;
+        outline: none;
+        border-color: cornflowerblue;
+      }
+      &:focus {
+        color: cornflowerblue;
+        outline: none;
+        border-color: cornflowerblue;
+      }
+    }
+  }
+  .logo {
+    width: 20%;
+  }
+}
