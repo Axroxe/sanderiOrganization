@@ -1,0 +1,38 @@
+section {
+  width: 720px;
+  margin: auto;
+  padding-left: 40px;
+  .detail {
+    p {
+      font-family: Raleway-Medium;
+      letter-spacing: 2px;
+      font-size: 17px;
+      color: black;
+      padding: 55px;
+      position: relative;
+      text-align: justify;
+      border-top: 1px solid #233580;
+      border-bottom: 1px solid #233580;
+      &:before {
+        content: '\201C';
+        position: absolute;
+        top: 0;
+        left: 15px;
+        font-size: 5.750em;
+        line-height: 1.1em;
+        color: #233580;
+        font-family: "RufinaALT02-Regular",Georgia,Times,"Times New Roman",serif
+      }
+      &:after {
+        content: '\201D';
+        position: absolute;
+        bottom: -25px;
+        right: 18px;
+        font-size: 5.750em;
+        line-height: 1.1em;
+        color: #233580;
+        font-family: "RufinaALT02-Regular",Georgia,Times,"Times New Roman",serif;
+      }
+    }
+  }
+}

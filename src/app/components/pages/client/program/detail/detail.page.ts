@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
+import {AuthService} from '../../../../../services/auth.service';
 
 @Component({
   selector: 'app-detail',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailPage implements OnInit {
 
-  constructor() { }
+  name: any;
+  constructor(
+      private activatedRoute: ActivatedRoute,
+      public authService: AuthService
+  ) { }
 
   ngOnInit() {
+    this.name = this.activatedRoute.snapshot.params.name;
   }
-
 }

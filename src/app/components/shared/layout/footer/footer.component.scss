@@ -1,10 +1,97 @@
 footer {
   text-align: center;
-  height: 80px;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
+  position: relative;
   bottom: 0;
+  background: white;
+  section {
+    padding: 20px 40px;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .logo {
+    width: 200px;
+    height: 50px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+  }
+  .menu {
+    padding: 20px;
+    border-bottom: 2px solid #233580;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    cursor: pointer;
+    align-items: flex-end;
+    a {
+      text-decoration: none;
+      //border-bottom: 1px solid transparent;
+      font-size: 20px;
+      font-weight: bold;
+      color: #233580;
+      font-family: Raleway-Light;
+      &:hover {
+        //color: cornflowerblue;
+        outline: none;
+        border-color: #233580;
+      }
+      &:focus {
+        // color: cornflowerblue;
+        outline: none;
+        border-color: #233580;
+      }
+    }
+    .active {
+      border-color: #233580;
+      font-family: Raleway-Bold;
+    }
+  }
+  .submenu {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    cursor: pointer;
+    align-items: center;
+    margin-top: 30px;
+    a {
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      color: #5b7084;
+      font-family: Raleway-Light;
+      border-bottom: 2px solid transparent;
+      &:hover {
+        //color: cornflowerblue;
+        outline: none;
+        border-color: #233580;
+      }
+      &:focus {
+        // color: cornflowerblue;
+        outline: none;
+        border-color: #233580;
+      }
+      &:first-child {
+        margin-right: 30px;
+      }
+    }
+    .active {
+      border-color: #233580;
+      font-family: Raleway-Bold;
+    }
+  }
+  .copyright {
+    font-family: Raleway-Light;
+    font-size: 13px;
+    margin-top: 40px;
+  }
 }

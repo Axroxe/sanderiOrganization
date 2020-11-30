@@ -1,1 +1,16 @@
-<footer>Copyright © 2020 Sanderi Organization - Todos los derechos reservados</footer>
+<footer>
+    <section>
+        <div class="logo" [ngStyle]="{'background-image': 'url('+authService.API+'img/Logo.svg'+')'}"></div>
+        <div class="menu">
+            <a routerLink="/organization">The Organization</a>
+            <a routerLink="/programs">Our programs</a>
+            <a routerLink="/editorial">Editorial</a>
+            <a routerLink="/contact-us">Contact us</a>
+        </div>
+        <div class="submenu">
+            <a routerLink="/privacy-policy">Privacy Policy </a>
+            <a routerLink="/about-this-site">About this site</a>
+        </div>
+        <span class="copyright">Copyright © 2020 Sanderi Organization - Todos los derechos reservados</span>
+    </section>
+</footer>

@@ -1,9 +1,30 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>detail</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-
-</ion-content>
+<section>
+  <div class="detail" *ngIf="name == 'nature-and-rural-life'">
+    <p>
+      Nature and rural life programs are designed to protect property collective or
+      individual rights, organic food security, natural richness and seeds; it also aims to
+      empower traditional rural ladies and their communities through introducing them
+      to international commerce platforms, in which they are encouraged to preserve
+      their natural resources, agricultural knowledge and landscapes from an
+      entrepreneur vision.
+    </p>
+  </div>
+  <div class="detail" *ngIf="name == 'art-and-culture'">
+    <p>
+      Art and culture address the need of widows of artists; it is a project to rescue art
+      patrimony and heritage; specifically, we aim to preserve the memory of those
+      artists that served the Nation, but that are left behind for the new waves. It also
+      connects young and senior artists to produce new projects designed to spread our
+      vision through events carefully based on historiographical methodologies.
+    </p>
+  </div>
+  <div class="detail" *ngIf="name == 'media-center'">
+  <p>
+    Our media center <b>“Barbatusco Films Group”</b> is the filmmaker of our
+    organization. It connects senior and young entrepreneurs with Sanderi Productions
+    to release original short films and documentary based on the “Rescuing Feminine
+    Memories and Short Stories”. Also, we produce non-profit events that spread the
+    vision and lobby of our organization.
+  </p>
+  </div>
+</section>

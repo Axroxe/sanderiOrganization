@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {AuthServices} from '../../../services/auth.service';
+import {AuthService} from '../../../services/auth.service';
 import {Router} from '@angular/router';
 import {ModalController} from '@ionic/angular';
 
@@ -11,7 +11,7 @@ import {ModalController} from '@ionic/angular';
 export class AdminPage implements OnInit {
 
   constructor(
-      public authService: AuthServices,
+      public authService: AuthService,
       private router: Router,
       public modalController: ModalController,
   ) { }

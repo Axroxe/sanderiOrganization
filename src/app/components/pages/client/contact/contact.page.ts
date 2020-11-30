@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactPage implements OnInit {
 
+  translate = false;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  change_language(){
+    this.translate = true;
   }
 
 }

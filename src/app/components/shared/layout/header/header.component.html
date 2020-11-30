@@ -1,9 +1,12 @@
 <ion-header>
-  <div class="logo">Logo</div>
-  <div class="menu">
-    <a routerLink="/organization">The Organization</a>
-    <a routerLink="programs">Our programs</a>
-    <a routerLink="editorial">Editorial</a>
-    <a routerLink="contact-us">Contact us</a>
+  <div class="header">
+    <div class="logo" [ngStyle]="{'background-image': 'url('+authService.API+'img/Logo.svg'+')'}" routerLink="/"></div>
+    <div class="menu">
+      <a routerLink="/organization" routerLinkActive="active">The Organization</a>
+      <a routerLink="/programs/detail/nature-and-rural-life" routerLinkActive="active">Our programs</a>
+      <a routerLink="/editorial" routerLinkActive="active">Editorial</a>
+      <a routerLink="/the-coffee-store" routerLinkActive="active">The Coffee Store</a>
+      <a routerLink="/contact-us" routerLinkActive="active">Contact us</a>
+    </div>
   </div>
 </ion-header>

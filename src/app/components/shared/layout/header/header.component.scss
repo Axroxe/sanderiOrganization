@@ -1,34 +1,66 @@
 ion-header {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
-  align-items: center;
-  height: 80px;
+  height: 70px;
   padding: 0 60px;
-  .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  .header {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
-    flex-wrap: wrap;
-    width: 80%;
-    cursor: pointer;
-    a {
-      text-decoration: none;
-      color: black;
-      border-bottom: 2px solid transparent;
-      &:hover {
-        color: cornflowerblue;
-        outline: none;
-        border-color: cornflowerblue;
+    align-items: center;
+    height: 100%;
+    width: 1200px;
+    .menu {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: calc(100% - 130px);
+      cursor: pointer;
+      height: 100%;
+      align-items: flex-end;
+      //padding-bottom: 10px;
+      a {
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+        font-size: 20px;
+        font-weight: bold;
+        color: #233580;
+        font-family: Raleway-Light;
+        padding-bottom: 10px;
+        &:hover {
+          //color: cornflowerblue;
+          outline: none;
+          border-color: #233580;
+        }
+        &:focus {
+         // color: cornflowerblue;
+          outline: none;
+          border-color: #233580;
+        }
       }
-      &:focus {
-        color: cornflowerblue;
-        outline: none;
-        border-color: cornflowerblue;
+      .active {
+        border-color: #233580;
+        font-family: Raleway-Bold;
       }
     }
-  }
-  .logo {
-    width: 20%;
+    .logo {
+      width: 130px;
+      height: 100%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      background-position: center;
+      &:hover {
+        //color: cornflowerblue;
+        outline: none;
+      }
+      &:focus {
+        // color: cornflowerblue;
+        outline: none;
+      }
+    }
   }
 }

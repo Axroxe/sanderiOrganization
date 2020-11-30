@@ -1,6 +1,31 @@
 section {
-  padding: 0 60px;
-  h1 {
-    text-align: center;
+  padding: 40px 60px;
+  min-height: 66vh;
+  .description {
+    width: 720px;
+    margin: auto;
+    h3 {
+      font-size: 32px;
+      color: #233580;
+      //border-bottom: 2px solid #233580;
+      padding-bottom: 15px;
+      font-weight: bold;
+      .line {
+        width: 100px;
+        height: 2px;
+        background: #233580;
+        display: block;
+        margin-top: 20px;
+      }
+    }
+
+    p {
+      font-family: Raleway-Medium;
+      letter-spacing: 2px;
+      font-size: 17px;
+      width: 100%;
+      margin: auto;
+      color: black !important;
+    }
   }
 }

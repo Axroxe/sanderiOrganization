@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  API: 'localhost:8000'
+  API: 'https://api.sanderi.org/'
 };

@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  API: 'localhost:8000'
+  API: 'https://api.sanderi.org/'
 };
 
 /*

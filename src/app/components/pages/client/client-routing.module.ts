@@ -9,7 +9,7 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        loadChildren: () => import('./organization/organization.module').then( m => m.OrganizationPageModule)
+        loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
       },
       {
         path: 'organization',
@@ -26,6 +26,18 @@ const routes: Routes = [
       {
         path: 'contact-us',
         loadChildren: () => import('./contact/contact.module').then( m => m.ContactPageModule)
+      },
+      {
+        path: 'about-this-site',
+        loadChildren: () => import('./about/about.module').then( m => m.AboutPageModule)
+      },
+      {
+        path: 'privacy-policy',
+        loadChildren: () => import('./privacy/privacy.module').then( m => m.PrivacyPageModule)
+      },
+      {
+        path: 'the-coffee-store',
+        loadChildren: () => import('./store/store.module').then( m => m.StorePageModule)
       },
     ]
   },

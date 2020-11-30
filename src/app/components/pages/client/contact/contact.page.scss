@@ -1,6 +1,55 @@
 section {
-  padding: 0 60px;
+  padding: 40px 0;
+  width: 720px;
+  margin: auto;
   h1 {
-    text-align: center;
+    font-size: 32px;
+    color: #233580;
+    //border-bottom: 4px solid #233580;
+    padding-bottom: 15px;
+    font-weight: bold;
+    .line {
+      width: 100px;
+      height: 2px;
+      background: #233580;
+      display: block;
+      margin-top: 20px;
+    }
+  }
+
+  p {
+    font-family: Raleway-Medium;
+    letter-spacing: 2px;
+    font-size: 17px;
+    color: black;
+    text-align: justify;
+    span {
+      font-size: 14px;
+      text-align: center;
+      display: block;
+      color: black !important;
+    }
+  }
+
+  .information {
+    p {
+      margin: 0;
+      color: black !important;
+    }
+  }
+
+  a {
+    cursor: pointer;
+    color: #233580;
+    display: block;
+    width: 100px;
+    font-family: Raleway-Light;
+    border-bottom: 2px solid transparent;
+    font-size: 18px;
+    font-weight: bold;
+    float: right;
+    &:hover {
+      border-color: #233580;
+    }
   }
 }

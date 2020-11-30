@@ -1,13 +1,32 @@
 <section>
-  <h1>Our programs</h1>
-
-  <h3>Nature and Rural Life</h3>
-  <p>“Nature and rural life programs are designed to protect property collective or individual rights, organic food security, natural richness and seeds; it also aims to empower traditional rural ladies and their communities through introducing them to international commerce platforms, in which they are encouraged to preserve their natural resources, agricultural knowledge and landscapes from an entrepreneur vision”.</p>
-
-  <h3>Art and culture</h3>
-  <p>“Art and culture address the need of widows of artists; it is a project to rescue art patrimony and heritage; specifically, we aim to preserve the memory of those artists that served the Nation, but that are left behind for the new waves. It also connects young and senior artists to produce new projects designed to spread our vision through events carefully based on historiographical methodologies”.</p>
-
-  <h3>Media</h3>
-  <p>“Our media center “Barbatusco Films Group” is the filmmaker of our organization. It connects senior and young entrepreneurs with Sanderi Productions to release original short films and documentary based on the “Rescuing Feminine Memories and Short Stories”. Also, we produce non-profit events that spread the vision and lobby of our organization.”</p>
-
+  <h1>Our programs <span class="line"></span></h1>
+  <div class="description">
+    <div class="menu">
+      <ul>
+        <li><a routerLink="detail/nature-and-rural-life">Nature and Rural Life</a>
+          <ul>
+            <li><a routerLink="detail/nature-and-rural-life/specialty-coffee-rural-women">Specialty Coffee Rural Women´s Association of Alto Tequendama, Cundinamarca, Colombia</a></li>
+            <li><a routerLink="detail/nature-and-rural-life/interinstitutional-research-agreement-between-the-organization-and-the-universidad-piloto-de-colombia">Interinstitutional Research Agreement between the Organization and the Universidad Piloto de Colombia, International Commerce Program 2019 - 2020</a></li>
+            <li><a routerLink="/the-coffee-store">Export Platform of Specialty Coffee Beans – The Coffee Store</a></li>
+            <li><a routerLink="detail/nature-and-rural-life/62-coffee-rural-ladies-day">62 Coffee Rural Ladies Day “04 October of 2019</a></li>
+          </ul>
+        </li>
+        <li><a routerLink="detail/art-and-culture">Art and culture</a>
+          <ul>
+            <li><a routerLink="detail/art-and-culture/bicentenary">Bicentenary</a></li>
+            <li><a routerLink="detail/art-and-culture/the-wild-ladies-book">The Wild Ladies´ Book - El libro de la mujer silvestre</a></li>
+            <li><a routerLink="detail/art-and-culture/langlais-heritage-fund">Langlais Heritage Fund</a></li>
+          </ul>
+        </li>
+        <li><a routerLink="detail/media-center">Media Center</a>
+          <ul>
+            <li><a routerLink="detail/media-center/barbatusco-films-group">Barbatusco Films Group</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="program">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </section>
